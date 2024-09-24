@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f9ff"
+    android:padding="16dp"
+    android:gravity="center"> <!-- Center all contents -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"> <!-- Center contents of the RelativeLayout -->
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/circular_background"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true" /> <!-- Center logo horizontally -->
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empowering the Nation"
+            android:textColor="#0062cc"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true" /> <!-- Center title horizontally -->
+
+        <TextView
+            android:id="@+id/intro_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Together we stand for peace. Empowering the Nation is a skills training initiative founded by Precious Radebe, dedicated to upskilling domestic workers and gardeners in Johannesburg. Established in 2018, the program enhances employability and supports entrepreneurial growth in the community."
+            android:textColor="#555"
+            android:textSize="18sp"
+            android:lineSpacingExtra="4dp"
+            android:layout_below="@id/title"
+            android:padding="16dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" /> <!-- Center intro text -->
+
+        <Button
+            android:id="@+id/explore_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore Our Courses"
+            android:backgroundTint="#007bff"
+            android:textColor="#ffffff"
+            android:padding="15dp"
+            android:layout_below="@id/intro_text"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true" /> <!-- Center button horizontally -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/about_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#e3f2fd"
+        android:padding="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"> <!-- Center the about section -->
+
+        <TextView
+            android:id="@+id/about_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textColor="#007bff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empowering the Nation was established to equip domestic workers and gardeners with the skills they need to excel in their work. We offer both six-month learnerships and six-week short skills training programs designed to improve their employability and independence."
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0062cc"
+        android:padding="20dp"
+        android:gravity="center"> <!-- Center footer content -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="© 2024 Empowering the Nation. All rights reserved."
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>
+
+
